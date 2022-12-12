@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 
-import '../../widgets.dart';
 import '../../constants.dart';
+import '../../widgets.dart';
 
 class ContentFavouritePage extends StatelessWidget {
   const ContentFavouritePage({super.key});

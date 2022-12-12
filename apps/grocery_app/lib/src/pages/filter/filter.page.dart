@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../widgets.dart';
 import '../../constants.dart';
+import '../../widgets.dart';
 
 class FilterPage extends StatelessWidget {
   const FilterPage({super.key});

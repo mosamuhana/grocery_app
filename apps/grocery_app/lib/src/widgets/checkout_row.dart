@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'app_text.dart';
 import '../constants.dart';
+import 'app_text.dart';
 
 class CheckoutRow extends StatelessWidget {
   final String label;

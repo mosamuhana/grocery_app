@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../widgets.dart';
-import '../constants.dart';
 import '../assets.dart';
+import '../constants.dart';
+import '../widgets.dart';
 
 class HomeBanner extends StatelessWidget {
   const HomeBanner({super.key});

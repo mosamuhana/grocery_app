@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'pages.dart';
 import 'models.dart';
+import 'pages.dart';
 
 class Nav {
   static void welcome(BuildContext context) => _show(context, const WelcomePage());

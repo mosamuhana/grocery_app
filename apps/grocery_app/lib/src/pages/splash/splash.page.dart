@@ -3,8 +3,8 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import '../../constants.dart';
 import '../../assets.dart';
+import '../../constants.dart';
 import '../../nav.dart';
 
 class SplashPage extends StatefulWidget {

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import '../../widgets.dart';
 import '../../assets.dart';
 import '../../constants.dart';
+import '../../widgets.dart';
 
 class OrderAcceptedPage extends StatelessWidget {
   const OrderAcceptedPage({super.key});

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'pages.dart';
 import 'constants.dart';
+import 'pages.dart';
 
 class App extends StatelessWidget {
   const App({super.key});

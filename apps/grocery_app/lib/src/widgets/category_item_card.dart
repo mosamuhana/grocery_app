@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '../constants.dart';
 import '../models.dart';
 import '../widgets.dart';
-import '../constants.dart';
 
 class CategoryItemCard extends StatelessWidget {
   final Category item;
