@@ -16,3 +16,4 @@ const List<Color> kExploreGridColors = [
 ];
 
 const kFontFamily = "Gilroy";
+const kIsNetworkImage = false;

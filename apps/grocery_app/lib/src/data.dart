@@ -1,8 +1,14 @@
+import 'constants.dart';
 import 'models/category.model.dart';
 import 'models/product.model.dart';
 
-const _categoriesBase = 'assets/app_images/categories';
-const _productsBase = 'assets/app_images/products';
+// https://github.com/mosamuhana/grocery_app/blob/main/resources/images/categories/bakery.png
+
+const _assetsBaseUrl = 'assets/app_images';
+const _networkBaseUrl = 'https://github.com/mosamuhana/grocery_app/blob/main/resources/images';
+const _base = kIsNetworkImage ? _networkBaseUrl : _assetsBaseUrl;
+const _categoriesBase = '$_base/categories';
+const _productsBase = '$_base/products';
 
 final List<Category> demoCategoryItems = <Category>[
   Category(

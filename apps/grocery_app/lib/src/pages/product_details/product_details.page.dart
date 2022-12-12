@@ -129,9 +129,7 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
       ),
       child: Hero(
         tag: "GroceryItem:${widget.item.name}-${widget.heroTagSuffix ?? ""}",
-        child: Image(
-          image: AssetImage(widget.item.image),
-        ),
+        child: kIsNetworkImage ? Image.network(widget.item.image) : Image.asset(widget.item.image),
       ),
     );
   }

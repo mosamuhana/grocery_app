@@ -32,7 +32,7 @@ class GroceryItemCard extends StatelessWidget {
               child: Center(
                 child: Hero(
                   tag: "GroceryItem:${item.name}-${heroTagSuffix ?? ""}",
-                  child: Image.asset(item.image),
+                  child: kIsNetworkImage ? Image.network(item.image) : Image.asset(item.image),
                 ),
               ),
             ),

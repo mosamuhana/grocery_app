@@ -28,7 +28,9 @@ class _ChartItemState extends State<ChartItem> {
           children: [
             SizedBox(
               width: 100,
-              child: Image.asset(widget.item.image),
+              child: kIsNetworkImage
+                  ? Image.network(widget.item.image)
+                  : Image.asset(widget.item.image),
             ),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,

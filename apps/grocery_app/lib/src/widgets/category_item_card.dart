@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../models.dart';
 import '../widgets.dart';
+import '../constants.dart';
 
 class CategoryItemCard extends StatelessWidget {
   final Category item;
@@ -31,7 +32,9 @@ class CategoryItemCard extends StatelessWidget {
           SizedBox(
             height: 120,
             width: 120,
-            child: Image.asset(item.image, fit: BoxFit.contain),
+            child: kIsNetworkImage
+                ? Image.network(item.image, fit: BoxFit.contain)
+                : Image.asset(item.image, fit: BoxFit.contain),
           ),
           SizedBox(
             height: 60,
