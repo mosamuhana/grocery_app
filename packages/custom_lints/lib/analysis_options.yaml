@@ -1,0 +1,12 @@
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    # We want to have sorted imports, to keep our imports clean.
+    directives_ordering: true
+
+    # The following lints are for a consistent code style.
+    sort_constructors_first: false
+    avoid_print: false
+    prefer_single_quotes: false
+    use_super_parameters: true

@@ -1,0 +1,19 @@
+name: samples
+
+packages:
+  - "apps/**"
+  - "packages/**"
+
+command:
+  bootstrap:
+    usePubspecOverrides: true
+    runPubGetInParallel: false
+
+scripts:
+  postclean: melos exec -c 6 -- "flutter clean"
+
+  reset: melos clean && melos bootstrap
+
+  format: melos exec -- dart format .
+
+  analyze: melos exec -c 1 -- dart analyze . --fatal-infos

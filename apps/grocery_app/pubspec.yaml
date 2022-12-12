@@ -1,0 +1,35 @@
+name: grocery_app
+description: A new Flutter project.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.18.5 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_svg: ^1.1.6
+  flutter_staggered_grid_view: ^0.6.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  custom_lints:
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/app_images/categories_images/
+    - assets/app_images/grocery_images/
+    - assets/app_images/beverages_images/
+    - assets/icons/
+
+  fonts:
+    - family: Gilroy
+      fonts:
+        - asset: assets/fonts/gilroy/Gilroy-Regular.ttf
+        - asset: assets/fonts/gilroy/Gilroy-SemiBold.ttf
+        - asset: assets/fonts/gilroy/Gilroy-Bold.otf
