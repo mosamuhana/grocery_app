@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
+import '../../constants.dart';
 import '../../models.dart';
 import '../../widgets.dart';
-import '../../constants.dart';
 
 class ProductDetailsPage extends StatefulWidget {
-  final GroceryItem item;
+  final Product item;
   final String? heroTagSuffix;
 
   const ProductDetailsPage({
@@ -40,7 +40,7 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
                         style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                       ),
                       subtitle: AppText(
-                        text: widget.item.description,
+                        text: '${widget.item.description}',
                         fontSize: 16,
                         fontWeight: FontWeight.w600,
                         color: kDarkGrey,

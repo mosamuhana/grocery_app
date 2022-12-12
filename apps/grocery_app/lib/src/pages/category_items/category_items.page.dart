@@ -55,7 +55,7 @@ class CategoryItemsPage extends StatelessWidget {
         // I only need two card horizontally
         children: demoGroceryItemBeverages.asMap().entries.map<Widget>(
           (e) {
-            GroceryItem groceryItem = e.value;
+            Product groceryItem = e.value;
             return GestureDetector(
               onTap: () => Nav.productDetails(context, item: groceryItem, suffix: 'explore_screen'),
               child: Container(

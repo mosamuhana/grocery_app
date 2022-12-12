@@ -1,2 +1,2 @@
 export 'models/category.model.dart';
-export 'models/grocery_item.dart';
+export 'models/product.model.dart';

@@ -5,7 +5,7 @@ import '../models.dart';
 import '../widgets.dart';
 
 class GroceryItemCard extends StatelessWidget {
-  final GroceryItem item;
+  final Product item;
   final String? heroTagSuffix;
 
   const GroceryItemCard({
@@ -43,7 +43,7 @@ class GroceryItemCard extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
             AppText(
-              text: item.description,
+              text: '${item.description}',
               fontSize: 14,
               fontWeight: FontWeight.w600,
               color: kDarkGrey,

@@ -5,7 +5,7 @@ import '../models.dart';
 import '../widgets.dart';
 
 class ChartItem extends StatefulWidget {
-  final GroceryItem item;
+  final Product item;
 
   const ChartItem({super.key, required this.item});
 
@@ -40,7 +40,7 @@ class _ChartItemState extends State<ChartItem> {
                 ),
                 const SizedBox(height: 5),
                 AppText(
-                  text: widget.item.description,
+                  text: '${widget.item.description}',
                   fontSize: 14,
                   fontWeight: FontWeight.bold,
                   color: kDarkGrey,

@@ -1,10 +1,8 @@
 import 'models/category.model.dart';
-import 'models/grocery_item.dart';
+import 'models/product.model.dart';
 
-const _imageBase = 'assets/app_images';
-const _categoriesBase = '$_imageBase/categories_images';
-const _groceryBase = '$_imageBase/grocery_images';
-const _beveragesBase = '$_imageBase/beverages_images';
+const _categoriesBase = 'assets/app_images/categories';
+const _productsBase = 'assets/app_images/products';
 
 final List<Category> demoCategoryItems = <Category>[
   Category(
@@ -39,98 +37,110 @@ final List<Category> demoCategoryItems = <Category>[
   ),
 ];
 
-final List<GroceryItem> demoGroceryItems = <GroceryItem>[
-  GroceryItem(
+final List<Product> demoGroceryItems = <Product>[
+  Product(
     id: 1,
     name: "Organic Bananas",
     description: "7pcs, Priceg",
     price: 4.99,
-    image: "$_groceryBase/banana.png",
+    image: "$_productsBase/banana.png",
+    categoryId: 1,
   ),
-  GroceryItem(
+  Product(
     id: 2,
     name: "Red Apple",
     description: "1kg, Priceg",
     price: 4.99,
-    image: "$_groceryBase/apple.png",
+    image: "$_productsBase/apple.png",
+    categoryId: 1,
   ),
-  GroceryItem(
+  Product(
     id: 3,
     name: "Bell Pepper Red",
     description: "1kg, Priceg",
     price: 4.99,
-    image: "$_groceryBase/pepper.png",
+    image: "$_productsBase/pepper.png",
+    categoryId: 1,
   ),
-  GroceryItem(
+  Product(
     id: 4,
     name: "Ginger",
     description: "250gm, Priceg",
     price: 4.99,
-    image: "$_groceryBase/ginger.png",
+    image: "$_productsBase/ginger.png",
+    categoryId: 1,
   ),
-  GroceryItem(
+  Product(
     id: 5,
     name: "Meat",
     description: "250gm, Priceg",
     price: 4.99,
-    image: "$_groceryBase/beef.png",
+    image: "$_productsBase/beef.png",
+    categoryId: 3,
   ),
-  GroceryItem(
+  Product(
     id: 6,
-    name: "Chikken",
+    name: "Chicken",
     description: "250gm, Priceg",
     price: 4.99,
-    image: "$_groceryBase/chicken.png",
+    image: "$_productsBase/chicken.png",
+    categoryId: 3,
   ),
 ];
 
-final List<GroceryItem> demoGroceryItemBeverages = <GroceryItem>[
-  GroceryItem(
+final List<Product> demoGroceryItemBeverages = <Product>[
+  Product(
     id: 7,
     name: "Dite Coke",
     description: "355ml, Price",
     price: 1.99,
-    image: "$_beveragesBase/diet_coke.png",
+    image: "$_productsBase/diet_coke.png",
+    categoryId: 6,
   ),
-  GroceryItem(
+  Product(
     id: 8,
     name: "Sprite Can",
     description: "325ml, Price",
     price: 1.50,
-    image: "$_beveragesBase/sprite.png",
+    image: "$_productsBase/sprite.png",
+    categoryId: 6,
   ),
-  GroceryItem(
+  Product(
     id: 9,
     name: "Apple Juice",
     description: "2L, Price",
     price: 15.99,
-    image: "$_beveragesBase/apple_and_grape_juice.png",
+    image: "$_productsBase/apple_and_grape_juice.png",
+    categoryId: 6,
   ),
-  GroceryItem(
+  Product(
     id: 10,
     name: "Orange Juice",
     description: "2L, Price",
     price: 1.50,
-    image: "$_beveragesBase/orange_juice.png",
+    image: "$_productsBase/orange_juice.png",
+    categoryId: 6,
   ),
-  GroceryItem(
+  Product(
     id: 11,
     name: "Coca Cola Can",
     description: "325ml, Price",
     price: 4.99,
-    image: "$_beveragesBase/coca_cola.png",
+    image: "$_productsBase/coca_cola.png",
+    categoryId: 6,
   ),
-  GroceryItem(
+  Product(
     id: 12,
     name: "Pepsi Can",
     description: "330ml, Price",
     price: 4.99,
-    image: "$_beveragesBase/pepsi.png",
+    image: "$_productsBase/pepsi.png",
+    categoryId: 6,
   ),
 ];
 
-final List<GroceryItem> exclusiveOffers = [demoGroceryItems[0], demoGroceryItems[1]];
+final List<Product> exclusiveOffers = [demoGroceryItems[0], demoGroceryItems[1]];
 
-final List<GroceryItem> bestSelling = [demoGroceryItems[2], demoGroceryItems[3]];
+final List<Product> bestSelling = [demoGroceryItems[2], demoGroceryItems[3]];
 
-final List<GroceryItem> groceries = [demoGroceryItems[4], demoGroceryItems[5]];
+final List<Product> groceries = [demoGroceryItems[4], demoGroceryItems[5]];

@@ -15,7 +15,7 @@ class Nav {
   static void categoryItems(BuildContext context, {required Category item}) =>
       _show(context, CategoryItemsPage(item: item));
 
-  static void productDetails(BuildContext context, {required GroceryItem item, String? suffix}) =>
+  static void productDetails(BuildContext context, {required Product item, String? suffix}) =>
       _show(context, ProductDetailsPage(item: item, heroTagSuffix: suffix));
 }
 

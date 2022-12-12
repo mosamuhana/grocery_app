@@ -22,9 +22,8 @@ flutter:
 
   assets:
     - assets/images/
-    - assets/app_images/categories_images/
-    - assets/app_images/grocery_images/
-    - assets/app_images/beverages_images/
+    - assets/app_images/categories/
+    - assets/app_images/products/
     - assets/icons/
 
   fonts:

@@ -5,7 +5,7 @@ import '../nav.dart';
 import 'grocery_item_card.dart';
 
 class HorizontalGroceryList extends StatelessWidget {
-  final List<GroceryItem> items;
+  final List<Product> items;
 
   const HorizontalGroceryList({super.key, required this.items});
 
