@@ -5,7 +5,8 @@ Flutter Grocery App
 ### To try the app download the apk from the [Release Tab](https://github.com/mosamuhana/grocery_app/resources/releases/app-release.apk)  
 -------------
   
-#### Flutter Version Used : 1.22.4  
+#### Flutter Version Used : 3.3.9
+#### Dart Version Used : 2.18.5
 #### Desing Credit : By  [Mousa Mhanna](https://www.linkedin.com/in/mousa-mhanna-9100b21b8/)
 #### Desing Files on Figma : [Online Groceries App UI](https://www.figma.com/community/file/882645007956337261)  
   
